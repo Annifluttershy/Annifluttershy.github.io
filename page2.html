@@ -1,73 +1,108 @@
-body {
-   font-family: 'Comic Sans MS', cursive, sans-serif;
-   background-color: white;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 50px;
-   padding: 20px;
-}
-.container {
-   width: 700px;
-   background-color: #fdf7e5;
-   border: 2px solid #ddd;
-   padding: 10px;
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-}
-.header {
-   background-color: #a5b8e0;
-   padding: 15px;
-   font-size: 24px;
-   text-align: center;
-   font-weight: bold;
-   border-radius: 5px;
-   color: black;
-   text-shadow: 2px 2px white;
-}
-.content {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 300px;
-}
-.circle {
-   width: 150px;
-   height: 150px;
-   background-color: #deb69a;
-   border-radius: 50%;
-   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-}
-/* Grid-Container */
-.grid-container {
-   display: flex;
-   justify-content: center;
-   padding: 20px;
-}
-.grid {
-   display: grid;
-   grid-template-columns: repeat(4, 80px);
-   grid-template-rows: repeat(4, 80px);
-   gap: 10px;
-}
-.app {
-   width: 80px;
-   height: 80px;
-   background-color: #d3d3d3;
-   border-radius: 10px;
-   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-/* Navigationspfeile */
-.navigation {
-   display: flex;
-   justify-content: space-between;
-   padding: 20px;
-}
-.arrow {
-   width: 40px;
-   height: 40px;
-   background-color: #b7a2d6;
-   clip-path: polygon(100% 50%, 0 0, 0 100%);
-}
-.left {
-   transform: rotate(180deg);
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Application</title>
+<style>
+       body {
+           font-family: 'Comic Sans MS', cursive, sans-serif;
+           background-color: white;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+       }
+       .container {
+           width: 700px;
+           background-color: #fdf7e5;
+           border: 2px solid #ddd;
+           padding: 10px;
+           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+           text-align: center;
+       }
+       .header {
+           background-color: #a5b8e0;
+           padding: 15px;
+           font-size: 24px;
+           font-weight: bold;
+           color: black;
+           text-shadow: 2px 2px white;
+           border-radius: 5px;
+       }
+       .grid-container {
+           display: flex;
+           justify-content: center;
+           padding: 20px;
+       }
+       .grid {
+           display: grid;
+           grid-template-columns: repeat(4, 80px);
+           grid-template-rows: repeat(4, 80px);
+           gap: 10px;
+       }
+       .app-button {
+           width: 80px;
+           height: 80px;
+           background-color: #d3d3d3;
+           border-radius: 10px;
+           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+           cursor: pointer;
+       }
+       .app-button:hover {
+           background-color: #bfbfbf;
+       }
+       .navigation {
+           display: flex;
+           justify-content: space-between;
+           padding: 20px;
+       }
+       .arrow {
+           width: 40px;
+           height: 40px;
+           background-color: #b7a2d6;
+           clip-path: polygon(100% 50%, 0 0, 0 100%);
+           cursor: pointer;
+       }
+       .left {
+           transform: rotate(180deg);
+       }
+       .arrow:hover {
+           background-color: #9b8bc9;
+       }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+           Select your application
+</div>
+<div class="grid-container">
+<div class="grid">
+<!-- 16 App-Buttons -->
+<div class="app-button" onclick="alert('App 1 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 2 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 3 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 4 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 5 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 6 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 7 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 8 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 9 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 10 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 11 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 12 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 13 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 14 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 15 geöffnet!')"></div>
+<div class="app-button" onclick="alert('App 16 geöffnet!')"></div>
+</div>
+</div>
+<div class="navigation">
+<div class="arrow left" onclick="alert('Zurück zur vorherigen Seite!')"></div>
+<div class="arrow right" onclick="alert('Nächste Seite!')"></div>
+</div>
+</div>
+</body>
+</html>
